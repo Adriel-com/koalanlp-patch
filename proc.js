@@ -777,7 +777,7 @@ class Dictionary {
 
 
   async getItems() {
-    return _jvm.JVM.toJsArray((await this._api.getItemsPromise()), readDicEntry, true);
+    return _jvm.JVM.toJsArray(await this._api.getItemsPromise(), readDicEntry, true);
   }
   /**
    * 사전에 등재되어 있는지 확인하고, 사전에 없는단어만 반환합니다.
@@ -789,7 +789,7 @@ class Dictionary {
 
   async getNotExists(onlySystemDic, ...word) {
     let zipped = word.map(pair => _jvm.JVM.pair(pair.surface, pair.tag.reference));
-    return _jvm.JVM.toJsArray((await this._api.getNotExistsPromise(onlySystemDic, ...zipped)), readDicEntry);
+    return _jvm.JVM.toJsArray(await this._api.getNotExistsPromise(onlySystemDic, ...zipped), readDicEntry);
   }
 
 }

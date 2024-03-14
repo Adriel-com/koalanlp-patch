@@ -44,11 +44,11 @@
   ],
   "dependencies": {
     "@babel/polyfill": "^7.7.0",
+    "axios": "^1.6.7",
     "core-js": "2",
     "global": "^4.4.0",
-    "java": "^0.12.0",
-    "node-java-maven": "^0.1.1",
-    "request": "^2.88.0",
+    "java": "^0.14.0",
+    "node-java-maven": "github:Adriel-com/node-java-maven-patch#8064c0ee59f5659368479fa4298cbfb18614c6b4",
     "underscore": "^1.9.1"
   },
   "devDependencies": {
